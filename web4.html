@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arlec - Cyber Security & Crypto Saham</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;transition:all .3s ease}
+body{background:#fff;color:#000;overflow-x:hidden}
+body.dark{background:#121212;color:#eee}
+.dark header{background:#1f1f1f}
+.dark .sidebar{background:#222}
+.dark .card{background:#1e1e1e;color:#eee}
+.dark .search-bar input{background:#333;color:#fff}
+
+/* HEADER */
+header{background:#003366;color:#fff;padding:15px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+header h1{font-size:20px}
+.menu-btn{cursor:pointer;font-size:24px}
+.theme-toggle{cursor:pointer;font-size:22px}
+
+/* SIDEBAR */
+.sidebar{position:fixed;left:-250px;top:0;width:250px;height:100%;background:#003366;color:#fff;padding:20px;transition:.4s ease;box-shadow:4px 0 15px rgba(0,0,0,.2)}
+.sidebar.active{left:0}
+.sidebar a{display:block;padding:10px 0;color:#fff;text-decoration:none;transition:.2s}
+.sidebar a:hover{color:#ffcc00;transform:translateX(5px)}
+
+/* SEARCH */
+.search-bar{display:flex;justify-content:center;margin:15px}
+.search-bar input{width:90%;max-width:500px;padding:10px 15px;border-radius:25px;border:1px solid #ccc;font-size:15px;outline:none}
+.search-bar input:focus{border-color:#003366}
+
+/* CONTAINER */
+.container{padding:20px}
+.section{margin-bottom:50px}
+.section h2{margin-bottom:15px;border-bottom:2px solid #003366;padding-bottom:5px;font-size:22px;position:relative}
+.section h2::after{content:"";position:absolute;left:0;bottom:-3px;width:50px;height:3px;background:#00f;box-shadow:0 0 10px #00f,0 0 20px #0ff;border-radius:2px}
+
+/* CARDS */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#f9f9f9;padding:15px;border-radius:15px;box-shadow:0 4px 12px rgba(0,0,0,.1);opacity:0;transform:translateY(30px);transition:.4s ease}
+.card img{width:100%;border-radius:12px;margin-bottom:10px}
+.card h3{margin-bottom:10px}
+.card:hover{transform:translateY(-8px) scale(1.02);box-shadow:0 0 15px rgba(0,102,255,.5)}
+
+/* WELCOME */
+#welcome{position:fixed;top:0;left:0;width:100%;height:100%;background:#003366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:28px;z-index:999;animation:fadeOut 2s ease 2s forwards}
+@keyframes fadeOut{to{opacity:0;visibility:hidden}}
+
+/* HERO */
+.hero{position:relative;text-align:center;margin-bottom:30px}
+.hero img{width:100%;max-height:280px;object-fit:cover;border-radius:12px;filter:brightness(70%)}
+.hero-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;font-size:26px;font-weight:bold;text-shadow:0 2px 6px rgba(0,0,0,.7)}
+
+@media(max-width:600px){
+  header h1{font-size:15px}
+  .hero-text{font-size:18px}
+}
+</style>
+</head>
+<body>
+<body>
+  <!-- Tombol Ubah Tema -->
+  <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+  <!-- Header / Navbar -->
+ 
+
+  <!-- Konten lainnya -->
+</body>
+
+<header>
+  <div class="logo"></div>
+
+  <!-- Menu links -->
+  <ul class="nav-links">
+    <li><a href="#cyber">Cyber Security</a></li>
+    <li><a href="#crypto">Crypto & Saham</a></li>
+    <li><a href="#trading">Trading</a></li>
+    <li><a href="#pengembangan">Pengembangan Diri</a></li>
+    <li><a href="#psikologi">Psikologi</a></li>
+    <li><a href="#filosofi">Filosofi</a></li>
+    <li><a href="#portfolio">Portofolio</a></li>
+    <li><a href="#contact">Kontak</a></li>
+  </ul>
+
+  <!-- Tombol hamburger -->
+  <div class="menu-btn" id="menuBtn" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<div class="search-bar">
+  <input type="text" placeholder="                    Glow up, no need to show up">
+</div>
+
+<!-- Hero Banner -->
+<div class="hero">
+  <img src="cc.png" alt="Cyber & Crypto">
+  <div class="hero-text"></div>
+</div>
+
+<div class="container">
+  <!-- Beranda -->
+  <section class="section" id="beranda">
+    <h2></h2>
+    <p>welcome di ruang belajar dan eksplorasi.
+ berisi berbagai topik penting untuk pengetahuan dan pengembangan diri:
+
+Cyber Security – Dasar keamanan digital dan perlindungan data.
+
+Crypto & Saham – Informasi, analisis, dan wawasan investasi.
+
+Trading – Strategi, teknik, dan praktik pasar.
+
+Pengembangan Diri – Langkah untuk membangun kebiasaan dan produktivitas.
+
+Psikologi – Pemahaman pola pikir dan perilaku.
+
+Filosofi – Sudut pandang dan prinsip dalam kehidupan serta keputusan.
+
+
+</p>
+ <section class="section" id="beranda">
+    <h2></h2>
+    <p>Catatan:
+Website ini masih dalam tahap pengembangan.
+Apabila menemukan bug, error, atau masalah lain, silakan hubungi melalui kontak di bagian bawah halaman.</p>
+  </section>
+
+  <!-- Cyber Security -->
+  <section class="section" id="cyber">
+    <h2>Cyber Security</h2>
+    <div class="cards">
+      <div class="card">
+        <!-- GANTI: src gambar Hacker diperbaiki ke link yang kamu kirim -->
+        <img src="sc.jpg" alt="Hacker">
+        <h3>Pentingnya Cyber Security</h3>
+        <p>Cyber security melindungi data pribadi & bisnis dari ancaman digital. Mari pelajari tekniknya.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?auto=format&fit=crop&w=800&q=80" alt="Firewall">
+        <h3>Firewall</h3>
+        <p>Firewall adalah pertahanan utama dalam sistem jaringan modern.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Crypto & Saham -->
+  <section class="section" id="crypto">
+    <h2>Crypto & Saham</h2>
+    <div class="cards">
+      <div class="card">
+        <!-- GANTI: src gambar Bitcoin diperbaiki ke link yang kamu kirim -->
+        <img src="btc.jpg" alt="Bitcoin">
+        <h3>Bitcoin</h3>
+        <p>Mata uang digital pertama di dunia dan paling populer di pasar kripto.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1518186233392-c232efbf2373?auto=format&fit=crop&w=800&q=80" alt="Investasi Saham">
+        <h3>Investasi Saham</h3>
+        <p>Saham adalah salah satu instrumen investasi paling tua dan terpercaya.</p>
+      </div>
+  <section class="section" id="trading">
+    <h2>Trading</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="trading.jpg" alt="Trading">
+        <div class="card-content">
+          <h3>Forex & Crypto</h3>
+          <p>Belajar strategi trading modern dengan manajemen risiko yang tepat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pengembangan Diri -->
+  <section class="section" id="selfdev">
+    <h2>Pengembangan Diri</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="selfdev.jpg" alt="Self Development">
+        <div class="card-content">
+          <h3>Growth Mindset</h3>
+          <p>Kembangkan diri untuk mencapai potensi maksimal dengan kebiasaan positif.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Psikologi -->
+  <section class="section" id="psychology">
+    <h2>Psikologi</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="psychology.jpg" alt="Psikologi">
+        <div class="card-content">
+          <h3>Psikologi Trading</h3>
+          <p>Mengendalikan emosi adalah kunci sukses dalam investasi & trading.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filosofi -->
+  <section class="section" id="philosophy">
+    <h2>Filosofi</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="philosophy.jpg" alt="Filosofi">
+        <div class="card-content">
+          <h3>Kebijaksanaan Hidup</h3>
+          <p>Belajar filosofi untuk menemukan arah dan makna dalam perjalanan hidup.</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+<!-- Portofolio -->
+<section class="section" id="portfolio">
+  <h2>Portofolio</h2>
+  <div class="slider">
+    <div class="slides">
+      <img src="foto2.jpg" alt="Portofolio 1">
+      <img src="foto1.jpg" alt="Portofolio 2">
+      <img src="foto3.jpg" alt="Portofolio 3"> <!-- FOTO KETIGA -->
+    </div>
+  </div>
+</section>
+
+<style>
+.slider {
+  width: 100%;
+  max-width: 800px;
+  height: 350px;          /* tinggi tetap untuk semua foto */
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 15px;
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,.2);
+}
+
+.slides {
+  display: flex;
+  width: 300%; /* karena ada 3 gambar */
+  animation: slide 9s infinite; /* lebih lama biar halus */
+}
+
+.slides img {
+  width: 100%;
+  height: 350px;
+  object-fit: contain;
+  flex: 1;
+  background: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  30%  { transform: translateX(0); }
+  40%  { transform: translateX(-100%); }
+  70%  { transform: translateX(-100%); }
+  80%  { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
+
+/* Tombol hamburger */
+.menu-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--card-bg, #fff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  position: relative;
+  z-index: 60;
+  border: 1px solid rgba(0,0,0,0.08);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.menu-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Garis-garis */
+.menu-btn span {
+  width: 20px;
+  height: 2px;
+  background: var(--text-color, #000);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Animasi jadi X */
+.menu-btn.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.menu-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+.menu-btn.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Dark mode support */
+[data-theme="dark"] .menu-btn {
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+}
+/* Default menu hidden (mobile) */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  background: #0d1b2a; /* biru navy elegan */
+  position: absolute;
+  top: 60px;  /* di bawah header */
+  right: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  z-index: 100;
+}
+
+/* Tampilkan kalau aktif */
+.nav-links.show {
+  display: flex;
+}
+
+/* Style link */
+.nav-links a {
+  color: #fff;           /* putih biar kontras */
+  text-decoration: none; /* hilangin underline */
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #00C6FF; /* gradasi biru pas hover */
+}
+.theme-toggle {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: transparent;
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1000;
+}
+</style>
+  </section>
+
+  <!-- Berita -->
+  <section class="section" id="berita">
+    <h2>Berita Kripto Terkini</h2>
+    <div id="news-container">⏳ Memuat berita kripto...</div>
+    <br>
+    <h2>Berita Saham Terkini</h2>
+    <div id="stock-news-container">⏳ Memuat berita saham...</div>
+  </section>
+</div>
+
+<script>
+function toggleMenu(){document.getElementById('sidebar').classList.toggle('active');}
+function toggleTheme(){
+  document.body.classList.toggle('dark');
+  const icon=document.querySelector('.theme-toggle');
+  icon.textContent=document.body.classList.contains('dark')?"☀️":"🌙";
+}
+async function loadNews(){
+  try{
+    // Crypto news
+    const res=await fetch("https://min-api.cryptocompare.com/data/v2/news/?lang=EN");
+    const data=await res.json();
+    const newsContainer=document.getElementById("news-container");
+    newsContainer.innerHTML="";
+    data.Data.slice(0,5).forEach(n=>{
+      const div=document.createElement("div");
+      div.className="card";
+      div.innerHTML=`
+        <h3>${n.title}</h3>
+        <p>${n.body.substring(0,120)}...</p>
+        <a href="${n.url}" target="_blank">Baca Selengkapnya</a>
+      `;
+      newsContainer.appendChild(div);
+    });
+
+    // Stock news (Yahoo Finance RSS via API)
+    const res2=await fetch("https://api.allorigins.win/raw?url=https://feeds.finance.yahoo.com/rss/2.0/headline?s=AAPL,TSLA,MSFT&region=US&lang=en-US");
+    const text=await res2.text();
+    const parser=new DOMParser();
+    const xml=parser.parseFromString(text,"text/xml");
+    const items=xml.querySelectorAll("item");
+    const stockContainer=document.getElementById("stock-news-container");
+    stockContainer.innerHTML="";
+    items.forEach((item,i)=>{
+      if(i<5){
+        const div=document.createElement("div");
+        div.className="card";
+        div.innerHTML=`
+          <h3>${item.querySelector("title").textContent}</h3>
+          <p>${item.querySelector("description").textContent.substring(0,120)}...</p>
+          <a href="${item.querySelector("link").textContent}" target="_blank">Baca Selengkapnya</a>
+        `;
+        stockContainer.appendChild(div);
+      }
+    });
+
+    revealCards();
+  }catch(err){
+    document.getElementById("news-container").innerHTML="Gagal memuat berita.";
+    document.getElementById("stock-news-container").innerHTML="Gagal memuat berita saham.";
+  }
+}
+function revealCards(){
+  const cards=document.querySelectorAll('.card');
+  const observer=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.style.opacity=1;
+        e.target.style.transform="translateY(0)";
+        observer.unobserve(e.target);
+      }
+    });
+  },{threshold:0.1});
+  cards.forEach(card=>observer.observe(card));
+}
+loadNews();
+revealCards();
+</script>
+<!-- Kontak -->
+<section class="section" id="contact">
+  <h2>Kontak</h2>
+  <div class="contact-links">
+    <a href="https://github.com/arlevce" target="_blank" class="github">
+      <i class="fab fa-github"></i><span>GitHub</span>
+    </a>
+    <a href="https://instagram.com/wnonolec" target="_blank" class="instagram">
+      <i class="fab fa-instagram"></i><span>Instagram</span>
+    </a>
+    <a href="https://wa.me/6287849074773" target="_blank" class="whatsapp">
+      <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+    </a>
+    <a href="https://tiktok.com/@cryptowaveclipgrey" target="_blank" class="tiktok">
+      <i class="fab fa-tiktok"></i><span>TikTok</span>
+    </a>
+  </div>
+</section>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+#contact {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* jarak antar tombol */
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.contact-links a {
+  text-decoration: none;
+  font-size: 16px; /* lebih kecil kaya awal */
+  padding: 10px 16px;
+  border-radius: 30px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  font-weight: 500;
+}
+
+/* Hover efek */
+.contact-links a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 12px rgba(255,255,255,0.4);
+}
+
+/* Icon */
+.contact-links i {
+  font-size: 18px;
+}
+
+/* Platform styles */
+.github { background: #24292e; }
+.instagram { background: linear-gradient(135deg, #f09433, #dc2743, #bc1888); }
+.whatsapp { background: linear-gradient(135deg, #25d366, #128c7e); }
+.tiktok { background: linear-gradient(135deg, #000000, #ff0050, #00f2ea); }
+</style>
+<script>
+function toggleMenu() {
+  const menu = document.querySelector('.nav-links');
+  const menuBtn = document.getElementById('menuBtn');
+  menu.classList.toggle('show');  
+  menuBtn.classList.toggle('active');
+}
+</script>
+</body>
+</html>
